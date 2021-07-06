@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/************   Projects Container   ***************/
+
+
+.projects-container{
+    
+    background-image:url('imgs/background01.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.projects-container h2{
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 30px;
+    color: rgba(102, 102, 102, 0.651);
+    width: 80%;
+    margin: 0px auto;
+    height: 200px;
+    letter-spacing: 60px;
+    
+
+}
+.glassmorphism{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    box-shadow: 0px 8px 32px 0px rgba(41, 41, 41, 0.7);
+}
+.imgs-projects{
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto;
+    background-color:none;
+   
+    
+    
+}
+.img-project{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 20px;
+    filter: grayscale(1);
+    border-radius: 50%;
+    transform: scale(1);
+    box-shadow: none;
+    transition: filter 0.7s,transform 0.7s,box-shadow 0.3s;
+
+    
+}
+.img-project:hover{
+    filter: grayscale(0);
+    transform: scale(1.2);
+    box-shadow: 0px 2px 15px rgb(17, 17, 17);
+
+}
+/*******************   Modal Box   ***********/
+
+
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: scale(0);
+    transition: 1s transform;
+    
+    
+}
+.modal-container .close{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    color: #f46037;
+    cursor: pointer;
+    padding: 2px 10px;
+    border-radius: 50%;
+    transition: 0.7s color, 0.7s background-color;
+    
+}
+.modal-container .close:hover{
+
+    color: #eee;
+    background-color: #f46037;
+    
+    
+}
+.img-modal{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 60vh;
+    object-fit: cover;
+    margin: 30px auto;
+    border-radius: 10px;
+    border:4px inset #f46037
+    
+}
+.details{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-25%);
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: #f46037a6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fcc4b5;
+    text-align: center;
+}
+.details h2{
+
+    font-size: 30px;
+    letter-spacing: 5px;
+    
+}
+.details h2 span,
+.details p span
+{
+
+   color: #ffffff;
+}
+.details p{
+    margin: 5px auto;
+    font-size: 25px;
+
+}
+.details :nth-child(2){
+     letter-spacing: 15px;
+
+}
+.details :nth-child(3){
+    letter-spacing: 2px;
+  
+
+}
