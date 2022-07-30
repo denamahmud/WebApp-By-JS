@@ -1,4 +1,4 @@
-// Array
+// Arrays
 
 var id = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -15,7 +15,7 @@ var years = [2003, 2005, 2010, 2013, 2017, 2014, 2011, 2007, 2005, 2020];
 
 var imgProject = document.querySelector('.img-project');
 var i;
-var modalContainer =document.querySelector('.modal-container');
+var modalContainer = document.querySelector('.modal-container');
 var imgModal = document.querySelector('.img-modal');
 var closeDOM = document.querySelector('.close');
 var titleDOM = document.getElementById("title");
